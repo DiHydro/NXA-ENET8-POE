@@ -1,0 +1,1170 @@
+
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+insmod module amx module ...
+insmod module rtcore ...
+▒▒▒▒▒
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+insmod module amx module ...
+insmod module rtcore ...
+
+Setting transition mode ...Assigned Unit ID:[1]
+
+Finished setting transition mode ...
+Entering transition mode ...done
+
+Finished transition mode ...
+Entering master mode ...---- Master state preemption
+
+Load certificate files : Starting
+Load certificate files : Finished
+
+Finished master mode ...
+Performing startup provision ...
+
+................................................................................................................................................................................................................................................................................................................................................
+CLI provision has been completed
+
+Notifying provision complete
+
+Pre-provision complete ...
+Finished pre-provision complete ...
+Provision complete ...
+Finished provision complete ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+User Access Verification
+
+Username: ▒▒▒▒▒
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+^[^[^[^[^[^[^[insmod module amx module ...
+insmod module rtcore ...
+^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[^[cc^[ccc^[c^[c^[c^[c^[cc^[^[c^[c
+Setting transition mode ...Assigned Unit ID:[1]
+
+Finished setting transition mode ...
+Entering transition mode ...done
+
+Finished transition mode ...
+Entering master mode ...---- Master state preemption
+
+Load certificate files : Starting
+Load certificate files : Finished
+
+Finished master mode ...
+Performing startup provision ...
+
+................................................................................................................................................................................................................................................................................................................................................
+CLI provision has been completed
+
+Notifying provision complete
+
+Pre-provision complete ...
+Finished pre-provision complete ...
+Provision complete ...
+Finished provision complete ...
+
+
+
+
+
+
+
+
+
+
+Press ENTER to start session x▒▒▒▒
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+ffffffinsmod module amx module ...
+finsmod module rtcore ...
+ffffffffffffffffffffffffffffffffffff
+Setting transition mode ...Assigned Unit ID:[1]
+
+Finished setting transition mode ...
+Entering transition mode ...done
+
+Finished transition mode ...
+Entering master mode ...---- Master state preemption
+
+Load certificate files : Starting
+Load certificate files : Finished
+
+Finished master mode ...
+Performing startup provision ...
+
+................................................................................................................................................................................................................................................................................................................................................
+CLI provision has been completed
+
+Notifying provision complete
+
+Pre-provision complete ...
+Finished pre-provision complete ...
+Provision complete ...
+Finished provision complete ...
+
+
+
+
+
+
+
+
+
+
+Press ENTER to start session x▒▒▒▒▒
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+insmod module amx module ...
+insmod module rtcore ...
+
+Setting transition mode ...Assigned Unit ID:[1]
+
+Finished setting transition mode ...
+Entering transition mode ...done
+
+Finished transition mode ...
+Entering master mode ...---- Master state preemption
+
+Load certificate files : Starting
+Load certificate files : Finished
+
+Finished master mode ...
+Performing startup provision ...
+
+!<stackingDB>00</stackingDB>
+!<stackingMac>01_8c-ea-1b-ba-f1-38_02</stackingMac>
+!
+
+!
+
+!
+!
+!
+!
+hostname POE_TWO
+snmp-server location "On top of the other"
+snmp-server contact Mark
+!
+jumbo frame
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+
+!
+!
+!
+!
+!
+!
+!
+vlan database
+ VLAN 1 name DefaultVlan media ethernet
+!
+!
+!
+!
+!
+interface port-channel 1
+!
+!
+!
+!
+!
+!
+spanning-tree mst configuration
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface ethernet 1/1
+ description Lights
+
+
+!
+interface ethernet 1/2
+ description wAP
+
+
+!
+interface ethernet 1/3
+ description TV Outlet
+
+
+!
+interface ethernet 1/4
+
+
+!
+interface ethernet 1/5
+
+
+!
+interface ethernet 1/6
+
+
+!
+interface ethernet 1/7
+
+
+!
+interface ethernet 1/8
+
+
+!
+interface ethernet 1/9
+
+
+!
+interface ethernet 1/10
+ lldp med-location civic-addr country US
+
+
+!
+!
+interface port-channel 1
+!
+!
+!
+interface vlan 1
+ ip address 192.168.1.56 255.255.255.0
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip default-gateway 192.168.1.1
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh server
+Failed to set Secure Shell status
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface vlan 1
+!
+!
+!
+!
+!
+!
+line console
+!
+!
+line vty
+!
+!
+!
+end
+
+CLI provision has been completed
+
+Notifying provision complete
+
+Pre-provision complete ...
+Finished pre-provision complete ...
+Provision complete ...
+Finished provision complete ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+User Access Verification
+
+Username: clear
+Password:
+Username: U-Boot 2011.12.(2.1.4.53590.Cand
+Password:
+Username:
+Password: x▒▒▒▒
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+insmod module amx module ...
+insmod module rtcore ...
+
+Setting transition mode ...Assigned Unit ID:[1]
+
+Finished setting transition mode ...
+Entering transition mode ...done
+
+Finished transition mode ...
+Entering master mode ...---- Master state preemption
+
+Load certificate files : Starting
+Load certificate files : Finished
+
+Finished master mode ...
+Performing startup provision ...
+
+................................................................................................................................................................................................................................................................................................................................................
+CLI provision has been completed
+
+Notifying provision complete
+
+Pre-provision complete ...
+Finished pre-provision complete ...
+Provision complete ...
+Finished provision complete ...
+
+
+
+
+
+
+
+
+
+
+Press ENTER to start session
+8▒▒▒
+
+
+U-Boot 2011.12.(2.1.4.53590.Candidate-4)0.1.1.6 (Dec 10 2015 - 16:34:04)
+
+CPU:500MHz LXB:200MHz MEM:300MHz
+DRAM:  256 MB
+SPI-F: 1x32 MB
+Loading 131072B env. variables from offset 0x100000
+Switch Port Count: 10
+Net:   Net Initialization Skipped
+eth#0
+Booting...  0
+<5>UC_MGR_Init: UC_MEM_Header_T: 8fa00000
+<5>UC_MGR_Allocate: alloc: 8fa0010c
+<5>UC_MGR_Allocate: alloc: 8fa00510
+<5>UC_MGR_Allocate: alloc: 8fa00514
+<5>UC_MGR_Allocate: alloc: 8fa00914
+Cold start
+partition changed to nor0,3
+Scanning JFFS2 FS: . done.
+### JFFS2 loading '.fs/.fmapping' to 0x83de0098
+### JFFS2 load complete: 144 bytes loaded to 0x83de0098
+### JFFS2 loading '.fs/NXA-ENET8-POE_V1.1.2.5.bix' to 0x81000000
+### JFFS2 load complete: 8630532 bytes loaded to 0x81000000
+## Booting kernel from Legacy Image at 81000000 ...
+   Image Name:   RUNTIME
+   Created:      2016-07-15  11:41:44 UTC
+   Image Type:   MIPS Linux Multi-File Image (uncompressed)
+   Data Size:    8630432 Bytes = 8.2 MB
+   Load Address: 08000000
+   Entry Point:  80281000
+   Version: 1.1.2.5
+   PID: 000001e1
+   Contents:
+      Image 0: 2748564 Bytes = 2.6 MB
+      Image 1: 5881856 Bytes = 5.6 MB
+   Verifying Checksum ... OK
+## Loading init Ramdisk from multi component Legacy Image at 81000000 ...
+   Loading Multi-File Image ... OK
+OK
+
+Starting kernel ...
+
+Linux version 2.6.19 (sam_wu@lab-linux3.accton.com.tw) (gcc version 4.3.6 20110218 (prerelease) (Realtek MSDK-4.3.6 Build 104) ) #1 PREEMPT Fri Jul 15 11:26:18 CST 2016
+CPU revision is: 00019070
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 0f600000 @ 00000000 (usable)
+Initial ramdisk at: 0x8129f104 (5881856 bytes)
+Built 1 zonelists.  Total pages: 62484
+Kernel command line: console=ttyS0,115200 mem=246M initrd_start=0x8129f104 initrd_size=0x59c000
+Primary instruction cache 16kB, physically tagged, 4-way, linesize 16 bytes.
+Primary data cache 16kB, 2-way, linesize 16 bytes.
+Synthesized TLB refill handler (20 instructions).
+Synthesized TLB load handler fastpath (32 instructions).
+Synthesized TLB store handler fastpath (32 instructions).
+Synthesized TLB modify handler fastpath (31 instructions).
+PID hash table entries: 1024 (order: 10, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 224896k/251904k available (2080k kernel code, 27004k reserved, 479k data, 124k init, 0k highmem)
+Mount-cache hash table entries: 512
+Checking for 'wait' instruction...  available.
+checking if image is initramfs...it isn't (bad gzip magic numbers); looks like an initrd
+Freeing initrd memory: 5744k freed
+NET: Registered protocol family 16
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 8192 bind 4096)
+TCP reno registered
+squashfs: version 3.3 (2007/10/31) Phillip Lougher
+squashfs: LZMA suppport for slax.org by jro
+JFFS2 version 2.2. (NAND) (C) 2001-2006 Red Hat, Inc.
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver $Revision: 1.90 $ 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x0 (irq = 31) is a 16550A
+RAMDISK driver initialized: 16 RAM disks of 16384K size 1024 blocksize
+loop: loaded (max 8 devices)
+physmap platform flash device: 02000000 at fe000000
+physmap-flash physmap-flash.0: map_probe failed
+Probe: SPI CS1 Flash Type S25FL256S
+Creating 4 MTD partitions on "Total SPI FLASH":
+0x00000000-0x00100000 : "uboot"
+mtd: Giving out device 0 to uboot
+0x00100000-0x00180000 : "env"
+mtd: Giving out device 1 to env
+0x00180000-0x00200000 : "hwinfo"
+mtd: Giving out device 2 to hwinfo
+0x00200000-0x02000000 : "userdata"
+mtd: Giving out device 3 to userdata
+TCP cubic registered
+NET: Registered protocol family 1
+NET: Registered protocol family 10
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+RAMDISK: squashfs filesystem found at block 0
+RAMDISK: Loading 5742KiB [1 disk] into ram disk... done.
+VFS: Mounted root (squashfs filesystem) readonly.
+Freeing unused kernel memory: 124k freed
+init started: BusyBox v1.7.3 (2015-07-06 15:33:11 CST)
+starting pid 597, tty '': '/etc/rc'
+running rc ...
+insmod module amx module ...
+insmod module rtcore ...
+
+Setting transition mode ...Assigned Unit ID:[1]
+
+Finished setting transition mode ...
+Entering transition mode ...done
+
+Finished transition mode ...
+Entering master mode ...---- Master state preemption
+
+Load certificate files : Starting
+Load certificate files : Finished
+
+Finished master mode ...
+Performing startup provision ...
+
+................................................................................................................................................................................................................................................................................................................................................
+CLI provision has been completed
+
+Notifying provision complete
+
+Pre-provision complete ...
+Finished pre-provision complete ...
+Provision complete ...
+Finished provision complete ...
+
+
+
+
+
+
+
+
+
+
+Press ENTER to start session
