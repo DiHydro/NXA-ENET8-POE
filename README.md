@@ -11,3 +11,5 @@ binwalk_V1.1.2.5.txt is the output from binwalk on the current firmware. From it
 know that it is running Linux 2.6.19 on a MIPS processor. The squashfs file system is extractable, and binwalk is able to do so. Looking through, it has a lot of the
 webserver code that allows for the management of the device. I have tried looking thoruogh this JS and .htm to see if that is were the verification takes place, but I am
 not very well versed to know if it's significant or not on the JS side.
+
+I bought a console cable to see if I could interrupt the uBoot loader and get access to the uBoot shell. This has been unsuccessful so far, as it seem a special key press may be needed to interrupt, or uBoot is configured to not allow dropping to shell.
