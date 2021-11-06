@@ -13,3 +13,5 @@ webserver code that allows for the management of the device. I have tried lookin
 not very well versed to know if it's significant or not on the JS side.
 
 I bought a console cable to see if I could interrupt the uBoot loader and get access to the uBoot shell. This has been unsuccessful so far, as it seem a special key press may be needed to interrupt, or uBoot is configured to not allow dropping to shell.
+
+I found a resource that may be helpful, as it seems getting OpenWRT compatibility on the OEM version of the switch has been fairly successful. https://biot.com/switches/ecs2100-10p. If anyone is able to figure out the check bytes that the firmware is signed with, that would be great to try and get my hardware working on the OpenWRT project.
